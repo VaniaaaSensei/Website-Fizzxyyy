@@ -44,6 +44,16 @@
     />
     <title>Fizzxy Profile</title>
   </head>
+  
+  <div class="tampil" id="tampil">
+		<div class="tampil-body">
+			<div>
+				<h1>Selamat Datang...</h1>
+				<p>Halo perkenalkan nama saya Muhammad Hafiz</p>
+				<button onclick=" putarmusic()">Tutup</button>
+			</div>
+		</div>
+	</div>
 
   <body>
     <ul class="nav justify-content-center bg-light fixed-top">
@@ -645,6 +655,14 @@ Hobi saya membuat website dan mencari hal-hal baru atau teknologi yang dapat say
     <script>
       AOS.init();
     </script>
+    <script>
+		var a = document.getElementById('tampil');
+		function putarmusic(){
+			a.style.display = "none";
+			var audio = new Audio('bye.mp3');
+			audio.play();
+		}
+	</script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
